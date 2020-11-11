@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CALCULADORA</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href="calculadora.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <div class = "back">
+            <div class = "cal">
+                <div class = "title">
+                    <h1>CALCULADORA</h1>
+                </div>
+
+                <div class = "dice" id = "sum">
+
+                    <button id = "but" v-on:click = "sum">SOM</button>
+                    <button id = "but" v-on:click = "sub">SUB</button>
+
+                    <input v-model.number = "n1" type = "number" placeholder = "digite o primeiro numero">
+        
+                    <h3 id = "E">E</h3>
+                
+                    <input v-model.number = "n2" type = "number" placeholder = "digite o segundo numero">
+
+                    <h2 id = "resul"> {{n1}}  C  {{n2}} = {{answer}}</h2>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    var sum = new Vue({
+        el:'#sum',
+        data:{
+            n1:0,
+            n2:0,
+            answer:0,
+        },
+        methods:{
+            sum: function(){
+                this.answer = this.n1 + this.n2;
+            },
+            sub: function(){
+                this.answer = this.n1 - this.n2;
+            }
+        }
+    })
+</script>

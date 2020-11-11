@@ -1,0 +1,77 @@
+body{
+    margin: auto;
+}
+
+.C1{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #152604;
+}
+
+    .PERFIL{
+        padding-top: 20px;
+        width: 85%;
+        height: 85%;
+        background-color: #261A0C;
+        position: relative;
+        right: 50;
+        left: 50;
+        top: 50;
+        bottom: 50;
+    }
+
+        .FOTOS{
+            position: relative;
+            bottom: 20px;
+            width: 20%;
+            height: 250px;
+            float: left;
+        }
+
+        #jao{
+            background-image: url("jao.jfif");
+            background-size: cover;
+        }
+
+        #gustavo{
+            background-image: url("gustavo.jfif");
+            background-size: cover;
+        }
+
+        #noe{
+            background-image: url("noe.jfif");
+            background-size: cover;
+        }
+
+        #caua{
+            background-image: url("caua.jfif");
+            background-size: cover;
+        }
+
+        #eu{
+            background-image: url("eu.jfif");
+            background-size: cover;
+        }
+
+    .PERFIL H1{
+        padding-left: 40px;
+        color: #BFB73F;
+        font-size: 40px;
+    }
+    
+
+    .PERFIL p{
+        font-size: 30px;
+        padding: 10px 60px;
+        color: #BFB73F;
+    }
+
+.C2{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: #51732F;
+}
+
+

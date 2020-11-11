@@ -1,0 +1,141 @@
+body{
+    margin: 0 0 0;
+}
+
+/*________________________________________________*/
+
+.TITULO{
+    width: 85%;
+    height: 25%;
+    font-size: 50px;
+    text-align: center;
+    line-height: 180px;
+    float: left;
+    color: white;
+    background-color: #0F222D;
+}
+
+/*________________________________________________*/
+
+.MENU{
+    width: 15%;
+    height: 100%;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    line-height: 6;
+    background-color: #324759;
+    color: white;
+}
+
+    .MENU1{
+        height: 16.66%;
+    }
+
+        .MENU1:hover{
+            background-color: #B22222;
+            color: #0F222D;
+        }
+
+    .MENU2{
+        height: 16.66%;
+    }
+
+        .MENU2:hover{
+            background-color: #B22222;
+            color: #0F222D;
+        }
+        
+
+    .MENU3{
+        height: 16.66%;
+    }
+
+        .MENU3:hover{
+            background-color: #B22222;
+            color: #0F222D;
+        }
+
+    .MENU4{
+        height: 16.66%;
+    }
+
+        .MENU4:hover{
+            background-color: #B22222;
+            color: #0F222D;
+        }
+
+    .MENU5{
+        height: 16.66%;
+
+    }
+
+        .MENU5:hover{
+            background-color: #B22222;
+            color: #0F222D;
+        }
+
+    .MENU6{
+        height: 16.66%;
+    }
+
+        .MENU6:hover{
+            background-color: #B22222;
+            color: #0F222D;
+        }
+
+
+/*________________________________________________*/
+
+.BLOCOS{
+    width: 15%;
+    height: 75%;
+    float: left;
+    font-size:25px;
+    text-align: center;
+    line-height: 7.2;
+    background-color: #8B0000;
+    color: white;
+    
+}
+
+    .BLOCO1{
+        height: 33.33%;
+    }
+
+        .BLOCO1 a{
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        
+            .BLOCO1 a:hover{
+                background-color: #5D7CA6;
+                color: #0F222D;
+            }
+
+    .BLOCO2{
+        height: 33.33%;
+    }
+        
+        .BLOCO2:hover{
+            background-color: #5D7CA6;
+            color: #0F222D;
+        }
+
+    .BLOCO3{
+        height: 33.33%;
+    }
+
+        .BLOCO3:hover{
+            background-color: #5D7CA6;
+            color: #0F222D;
+        }
+
+/*________________________________________________*/
+
+.conteudo{
+    background-color: #F7724A;
+    color: white;
+    height: 100%;
+}

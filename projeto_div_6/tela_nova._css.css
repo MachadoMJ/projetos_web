@@ -1,0 +1,31 @@
+body{
+    margin: 0 0 0 0;
+}
+
+.TOPO{
+    background-color: lawngreen;
+    width: 100%;
+    height: 150px;
+}
+
+.MENU{
+    background-color: lightblue;
+    width: 30%;
+    height: 570px;
+    float: left;
+}
+
+.CON{
+    width: 70%;
+    float: right;
+}
+
+    .INFO1{
+        background-color: lightgray;
+        height: 285px;
+    }
+
+    .INFO2{
+        background-color: lightsalmon;
+        height: 285px;
+    }

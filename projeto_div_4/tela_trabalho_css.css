@@ -1,0 +1,317 @@
+body{
+    margin: 0 0 0;
+}
+
+
+/*************************************************************/
+.C1{
+    width: 100%;
+    height: 180px;
+}
+    .DIV1{
+        float: left;
+        width: 25%;
+        height: 100%;
+        background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/10/bmw-wheel-logo-4k_1538935183.jpg");
+        background-size: cover;
+    }
+
+    .DIV2{
+        float: right;
+        width: 75%;
+        height: 100%;
+
+        color: white;
+        font-size: 45px;
+        text-align: center;
+        line-height: 4;
+    }
+
+        .CARROS{
+            width: 25%;
+            height: 100%;
+            float: left;
+            background-color: #262629;
+        }
+
+            .CARROS:hover{
+                color: black;
+                background-color: #A4ACA2;
+            }
+        
+        .MOTOS{
+            width: 25%;
+            height: 100%;
+            float: left;
+            background-color: #212121;
+        }
+
+            .MOTOS:hover{
+                color: black;
+                background-color: #A4ACA2;    
+            }
+
+        .BARCOS{
+            width: 25%;
+            height: 100%;
+            float: left;
+            background-color: #1C1C1C;
+        }
+
+            .BARCOS:hover{
+                color: black;
+                background-color: #A4ACA2;
+            }
+
+        .JET{
+            width: 25%;
+            height: 100%;
+            float: left;
+            background-color: #1A1A1A;
+        }
+
+            .JET:hover{
+                color: black;
+                background-color: #A4ACA2;
+            }
+
+/*************************************************************/
+
+.C2{
+    width: 100%;
+    height: 500px;
+}
+
+    .DIV3{
+        float: left;
+        width: 25%;
+        height: 100%;  
+    }
+
+        .TABELA{
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+
+        .TABELA thead tr{
+            color: white;
+            background-color: #2E3136;
+            text-align: left;
+        }
+
+        .TABELA th{
+            font-size: 25px;
+            padding: 29px 15px;
+        }
+        .TABELA td{
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        .TABELA tbody tr{
+            border-bottom: 1px solid #2E3136;
+        }
+
+        .TABELA tbody tr:nth-of-type(even){
+            color: #2E3136;
+            background-color: #BBC8D9;
+        }
+
+    .DIV4{
+        float: right;
+        width: 75%;
+        height: 100%;
+        background-color: silver;
+    }
+
+        .title{
+            width: 100%;
+            height: 86px;
+
+            color: white;
+            font-size: 45PX;
+            text-align: center;
+            line-height: 85px;
+            background-color: #152026;
+        }
+
+        .FORM h2{
+            font-size: 25px;
+            color: white;
+            padding: 1px 20px;
+        }
+
+        .DADOS{
+            padding: 10px;
+            float: left;
+        }
+
+        .DCOMPRA{
+            padding-left: 30px;
+        }
+
+            .DADOS label{
+                font-size: 20px;
+                color: white;
+            }
+
+            .DADOS input{
+                width: 100%;
+                height: 25px;
+                border-radius: 3px;
+                border: black;  
+            }
+
+            .DADOS button{
+                width: 120px;
+                height: 50px;
+                color: white;
+                background-color: #152026 ;
+                border-radius: 30px;
+                border: 0px;
+                outline: 0;
+            }
+
+/*************************************************************/
+
+.DIV5{
+    width: 100%;
+    height: 210px;
+    position: relative;
+}
+
+    .OVERFLY{
+        position: absolute;
+        background-color: black;
+        opacity: 0.8;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    .CARRO1{
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-image: url("https://quatrorodas.abril.com.br/wp-content/uploads/2019/07/p90332326_highres_the-all-new-bmw-320d-e1564083729655.jpg?quality=70&strip=info");
+        background-size: cover;
+    }
+
+        .CARRO1:hover .OVERFLY{
+            width: 20%;
+        }
+
+            .text1{
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+              }
+        
+        
+    .CARRO2{
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-image: url("https://cdn-motorshow-ssl.akamaized.net/wp-content/uploads/sites/2/2019/11/bmw-118i-e1574111890130.jpg");
+        background-size: cover;
+        display: block;
+    }
+
+            .CARRO2:hover .OVERFLY{
+            width: 20%;
+        }
+
+            .text2{
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+            }
+
+    .CARRO3{
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-image: url("https://3.bp.blogspot.com/-bkttrahTrzw/VAKcWvo5sZI/AAAAAAABzvk/ILiNy_XL40Y/s1600/BMW%2BM4%2BConversivel%2B(6).jpg");
+        background-size: cover;
+        display: block;
+    }
+
+        .CARRO3:hover .OVERFLY{
+            width: 20%;
+        }
+
+            .text3{
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+            }
+
+    .CARRO4{
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-image: url("https://fotos.jornaldocarro.estadao.com.br/uploads/2018/02/19161208/P90261107_highRes_bmw-m4-cs-san-marino.jpg");
+        background-size: cover;
+        display: block;
+    }
+
+        .CARRO4:hover .OVERFLY{
+            width: 20%;
+        }
+
+            .text4{
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+            }
+
+    .CARRO5{
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-image: url("https://quatrorodas.abril.com.br/wp-content/uploads/2019/03/bmw_x5_m50i-1.jpeg?quality=70&strip=info");
+        background-size: cover;
+        display: block;
+    }
+
+        .CARRO5:hover .OVERFLY{
+            width: 20%;
+        }
+
+            .text5{
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+            }   

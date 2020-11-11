@@ -1,0 +1,34 @@
+body{
+    margin: 0 0 0;
+}
+
+.DIVC{
+    width: 100%;
+    height: 120px;
+}
+
+    .DIV1{
+        float: left;
+        width: 20%;
+        height: 120px;
+        background-color: #BF3326;
+    }
+
+    .DIV2{
+        float: right;
+        width: 80%;
+        height: 120px;
+        background-color: #73221A;
+    }
+
+.DIV3{
+    width: 100%;
+    height: 481px;
+    background-color: #D99A4E;
+}
+.DIV4{
+    width: 100%;
+    height: 120px;
+    background-color: #D91414;
+}
+

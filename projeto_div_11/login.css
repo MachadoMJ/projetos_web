@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*inicio -- fundo da tela*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{/*fundo*/
+    display: flex;/*faz os dois codigos funcionar*/
+    justify-content: center;/*eixo X*/                  /*----- centraliza a base*/
+    height: 100vh;/*faz o items funcionar*/
+    align-items: center;/*eixo Y*/
+    background-image: linear-gradient(to bottom,  #ecf5f9,silver);
+}
+/*fim*/
+
+    /*inicio -- base da tela*/
+    .content{/*base*/
+        width: 80%;
+        height: 75%;             /*---- tamanho da base*/
+        border-radius: 20px;
+
+        justify-content: space-between;/*separa os dois conteudos*/
+        align-items: center;/*eixo Y*/                                  /*----- centaliza as palavras dentro da base*/
+        background-color: whitesmoke;
+        position: relative;
+
+        z-index: 20;
+    }
+    .content::before{/*bloco colorido*/
+        content: "";
+        border-radius: 20px;
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        background-color: #C26E00;
+    }
+    /*fim*/
+
+    /*inicio -- configuraçoes de letras e botao*/
+    .title{
+        font-size: 40px;
+        font-weight: bold;/*espessura da letra*/
+        line-height: 50px;/*espaço entre as linhas*/
+    }
+
+    .description{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+        .color3{
+            color: silver;
+            margin: 10px;
+        }
+    
+    .but{
+        margin-top: 12px;
+        width: 150px;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        align-self: center;/*ele mesmo se alinhar ao centro - em relação a div que esta dentro*/
+    }
+
+        .color{
+            color: whitesmoke;
+        }
+        .color2{
+            color: #C26E00;
+        }
+
+            .but1{
+                background-color: transparent;
+                border: 1px solid whitesmoke;
+                transition: background-color 1s;
+                
+            }
+                .but1:hover{
+                    background-color: whitesmoke;
+                    color: #C26E00;
+                }
+
+            .but2{
+                background-color: whitesmoke;
+                border: 1px solid #C26E00;
+                transition: background-color 1s;
+            }
+                .but2:hover{
+                    background-color: #C26E00;
+                    color: whitesmoke;
+                }
+    /*fim*/
+    
+        /*inicio -- primeira tela(criar conta)*/
+        .first-content{/*primeira tela*/
+            display: flex;/*separa o primeiro conteudo do segundo*/
+
+        }
+
+            .firts-column{/*logar*/
+                text-align: center;
+                width: 40%;/*flex: 1 0 auto; -- um jeito de ser feito*/
+
+                z-index: 6;
+            }
+
+            .segund-column{/*cadastrar*/
+                width: 60%;/*flex: 2 0 auto; -- um jeito de ser feito*/
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+                .social{
+                    display: flex;
+                    list-style-type: none;/*tira o ponto que tem na frente*/
+                    
+                }
+                    .logos{
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        line-height: 50px;
+                        font-size: 25px;
+                        margin: 5px 10px;
+
+                        border-radius: 50%;
+                        border: 1px solid silver;
+                    }
+                        .logos:hover{
+                            border: 1px solid #C26E00;
+                        }
+                    .fab{
+                        color: silver;
+                    }
+                        .fab:hover{
+                            color: #C26E00;
+                        }
+                        
+
+                .form{
+                    width: 50%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .form input{
+                        width: 100%;
+                        height: 50px;
+                        padding: 10px;
+                        background-color: #e9e9e9;
+                        outline: none;
+                        border: none;
+                    }
+
+                    .form label{
+                        margin: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        background-color: #e9e9e9;
+                    }
+        /*fim*/
+
+        .segund-content{/*segunda tela*/
+            position: absolute;
+            display: flex;
+        }
+            .link{
+                align-self: center;
+            }
+                .link:hover{
+                    color: #C26E00;
+                }
+        .segund-content .firts-column{
+            order: 2;
+        }        
+
+        .segund-content .segund-column{
+            order: 1;
+        }
+
+
+        /*inicio -- esquema para trocar as telas(para a tela de login)*/
+    .logar .first-content{/*escondendo a primeira parte*/
+        z-index: -1;
+    }
+
+    .logar .segund-content .segund-column{/*fazendo a segunda sobre sair*/
+        animation: opacity 5s;
+        z-index: 1;
+    }
+
+        .logar .content::before{
+            left: 60%;
+            z-index: 5;
+            animation: trancisaoLOG 3s;
+        }
+
+    /*fim*/
+
+        /*trocando a tela para a de cadastrado*/
+    .cadastrar .segund-content{/*escondendo a segunda parte de volta*/
+        z-index: -1;
+    }
+
+    .cadastrar.animar .first-content .segund-column{
+        animation: opacity 5s;
+        z-index: 1;
+    }
+    
+        .cadastrar.animar .content::before{
+            z-index: 5;
+            animation: trancisaoCAD 3s;
+        }
+
+    /*ANIMAÇÃO*/
+@keyframes trancisaoLOG{
+    0%{
+        left: 0%;
+        width: 40%;
+    }
+
+    30%{
+        left: 30%;
+        width: 50%;
+    }
+
+    60%{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes trancisaoCAD{
+    0%{
+        left: 60%;
+        width: 40%;
+    }
+
+    30%{
+        left: 30%;
+        width: 50%;
+    }
+
+    60%{
+        left: 0%;
+        width: 40%;
+    }
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0%;
+    }
+
+    25%{
+        opacity: 0%;
+    }
+
+    75%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}    

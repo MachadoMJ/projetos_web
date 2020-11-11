@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "calculator.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <div class = "back">
+            <div class = "cal">
+                <div class = "title">
+                    <h1>CALCULATOR</h1>
+                </div>
+
+                <div id = "operations">
+                    <div class = "dice">
+                        <input v-model.number = "n1" type = "number" placeholder = "first number">
+                    </div>
+                    
+                    <div class = "dice">
+                        <input v-model.number = "n2" type = "number" placeholder = "segund number">
+                    </div>
+
+                    <div class = "operations">
+                        <button v-on:click = "som">SOM</button>
+                        <button v-on:click = "sub">SUB</button>
+                        <button v-on:click = "mul">MUL</button>
+                        <button v-on:click = "div">DIV</button>
+                    </div>
+
+                    <h2 id = "answer">{{n1}} -- {{n2}} = {{answer}}</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    var operations = new Vue({
+        el:'#operations',
+        data:{
+            n1:0,
+            n2:0,
+            answer:0,
+        },
+        methods:{
+            som:function(){
+                this.answer = this.n1 + this.n2;
+            },
+            sub:function(){
+                this.answer = this.n1 - this.n2;
+            },
+            mul:function(){
+                this.answer = this.n1 * this.n2;
+            },
+            div:function(){
+                this.answer = this.n1 / this.n2;
+            }
+        }
+    })
+</script>
